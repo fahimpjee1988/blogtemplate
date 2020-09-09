@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div><img src="NORDICROSE.png" alt="" onclick="logo()"></div>
+    
+        <div>
+            <nav>
+                
+                    <ul>
+                        <%dataNav.forEach(elt=>{%>
+                        <li>
+                            <a href='<%=elt.url%>'> <%=elt.name%> </a>
+                        </li>
+                        <%})%>
+    
+                    </ul>
+        
+            </nav>
+        </div>
+    </header>
+
+    <section class="firstsectionart">
+    <h1>ADD NEW ARTICLE </h1>
+    <form action="/new" method="POST">
+        <input type="text" name="title" id="" placeholder="Title">
+        <input type="text" name="url" id="" placeholder="Url Picture">
+        <input type="text" name="author" id="" placeholder="Author">
+        <input type="text" name="authorpic" id="" placeholder="Author Picture">
+        <input type="text" name="write" id="" placeholder="Write your article here...">
+
+
+        <input type="submit" value="Send">
+    </form>
+
+    <h1>What to read next</h1>
+<section class="nextread">
+
+
+<%dataPic2.forEach(elt=>{%>
+        
+    <div class="articlepics">
+    <img src='<%=elt.url%>' alt="">
+
+    
+    <a href=''><p><%=elt.title%></p> </a>
+</div>
+<%})%>
+
+</section>
+
+
+
+
+
+
+
+    <footer>
+        <nav>
+           
+            <ul>
+                
+        <li><a href=""></a>DIGITAL PRODUCT DESIGN</li>
+        
+        <li><a href=""></a>REMOTE WORK</li>
+        
+        <li><a href=""></a>UX DESIGN</li>
+        
+        <li><a href=""></a>DISTRUBUTED TEAM</li>
+        
+        <li><a href=""></a>CREATIVTY</li>
+        
+        <li><a href=""></a>STRATEGIE</li>
+        
+        <li><a href=""></a>SUSPENCE</li>
+        
+        <li><a href=""></a>GROWTH</li>
+        
+        </ul>
+        </div>
+        
+            <H3>NORDIC ROSE</H3>
+            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis eu velit tempus erat egestas efficitur. 
+                In hac habitasse platea dictumst.
+                 Fusce a nunc eget ligula suscipit finibus. </P>
+                <div class="socialmedia">
+                    <ul><a href=""></a>Twitter</ul>
+                    <ul><a href=""></a>LinkedIn</ul>
+                    <ul><a href=""></a>RSS</ul>
+                </div>
+                <p> ® 2012-2020 Nordic Rose Co. <br>
+                All rights reserved.</p>
+        </footer>
+        
+</section>
+<script src="index2.js"></script>
+
+</body>
+</html>

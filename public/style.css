@@ -1,0 +1,158 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+*{
+margin:0;
+padding:0;
+font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:5%;
+}
+ header nav{
+    width:200px
+}
+
+header ul{
+    list-style: none;
+}
+ header ul li{
+    display:inline-block;
+    padding-left:5%;
+color:black;
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+
+header ul nav a:active{
+    text-decoration: underline;
+    color: black;
+}
+header nav a:hover{
+    text-decoration: underline;
+    color: black;
+}
+#secone{
+    text-align:center;
+    font-style: normal;
+font-weight: bold;
+font-size: 34px;
+line-height: 100%;
+margin-bottom:5%;
+}
+#secone h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 100%;
+    width:400px;
+    text-align:center;
+    margin-left:35%;
+    border-bottom: 1px solid black;
+    margin-bottom:15%;
+
+}
+
+
+
+.articlepics{
+    display:grid;
+    grid-template-areas: 1fr 1fr;
+  
+}
+
+.articlepictures{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   width:500px;
+   margin:0 auto;
+   column-gap: 3%;
+}
+
+
+
+.articlepictures div p{
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+.articlepictures a{
+    color:black;
+    text-decoration: none;
+}
+
+
+
+footer{
+    background:black;
+    color:white;
+    text-align: center;
+}
+
+footer ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+}
+
+footer p{
+   padding-top:5%;
+   padding-bottom:5%;
+}
+
+.socialmedia{
+    display:flex;
+    justify-content: space-between;
+
+} 
+
+
+.firstsectionart input{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+    color: rgba(51, 51, 51, 0.5);
+    border-radius: 5px;
+    width:700px;
+    height:25px;
+}
+.firstsectionart input:last-of-type{
+   background:black;
+   color:white
+}
+
+.nextread{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.nextread a{
+ color:black;
+ text-decoration: none;
+}
+
+.blogtext{
+    width:400px;
+margin:0 auto;
+border-bottom: 1px solid black;
+padding-bottom: 15%;
+}

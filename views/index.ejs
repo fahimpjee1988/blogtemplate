@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-    <div><img src="NORDICROSE.png" alt="" onclick="logo()"></div>
+    <div><img src="NORDICROSE.png" alt="" ></div>
 
     <div>
         <nav>
@@ -37,12 +37,15 @@
 <section class="articlepictures" >
 
         <%dataPic.forEach(elt=>{%>
+            <article id='<%=elt.id%>'>
         
             <div class="articlepics">
+
             <img src='<%=elt.url%>' alt="">
 
             
-            <a href=''><p><%=elt.title%></p> </a>
+            <a href='/index/<%= elt.id %> '><p><%=elt.title%></p> </a>
+        </article>
         </div>
         <%})%>
 
@@ -89,7 +92,6 @@
         All rights reserved.</p>
 </footer>
 
-<script src="index2.js"></script>
 
 </body>
 </html>
